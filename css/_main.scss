@@ -1,0 +1,541 @@
+main {
+    grid-row: 2/3;
+}
+
+article {
+    background-color: $white-color;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    div {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.mobile {
+    margin-top: 5px;
+}
+
+.transfers-mobile {
+    display: flex;
+    flex-direction: column;
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+.transfers-up {
+    margin-top: 13.5px;
+}
+
+.transfers-down {
+    margin-bottom: 9.5px;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    & > div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.my-founds {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.account-type {
+    @include font-properties;
+    width: 151px;
+    height: 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: $second-brand-color;
+}
+
+.account-name {
+    @include font-properties;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.29px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.red-arrow {
+    width: 19.6px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.account-number {
+    @include font-properties;
+    width: 199px;
+    height: 12px;
+    font-size: 10px;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: $darker-gray;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.available-founds {
+    @include font-properties;
+    font-size: 10px;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: $second-brand-color;
+    text-transform: uppercase;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.amount {
+    @include font-properties;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $second-brand-color;
+}
+
+.line, .upper-line {
+    width: 321px;
+    height: 1px;
+    border: solid 1px #dbdbdb;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        width: 319px;
+        height: 50px;
+        border-radius: 4px;
+        a {
+            @include font-properties;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: normal;
+            letter-spacing: 0.14px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
+
+.main-button {
+    border: solid 1px $brand-color;
+    background-color: $brand-color;
+}
+
+.main-button-text {
+    width: 171px;
+    height: 15px;
+    color: $white-color;
+}
+
+.other-button {
+    border: solid 1px $light-gray;
+    background-color: $light-gray;
+}
+
+.other-button-text {
+    width: 169px;
+    height: 15px;
+    color: $brand-color;
+}
+
+.little-arrow {
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
+    margin-left: 10.5px;
+}
+
+.who {
+    @include font-properties;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.07;
+    letter-spacing: 0.17px;
+    color: #000000;
+    margin-left: 24px;
+}
+
+.how-much {
+    @include font-properties;
+    width: 76px;
+    height: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.07;
+    letter-spacing: 0.17px;
+    color: #000000;
+    margin-left: 85px;
+}
+
+.uber {
+    margin-left: 164px;
+}
+
+.when {
+    @include font-properties;
+    width: 32px;
+    height: 15px;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.14px;
+    color: $darker-gray;
+}
+
+.why {
+    @include font-properties;
+    height: 15px;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.14px;
+    color: $darker-gray;
+    margin-left: 14.5px;
+}
+
+.show {
+    @include font-properties;
+    width: 105px;
+    height: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.07;
+    letter-spacing: 0.17px;
+    text-align: left;
+    color: $brand-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.lower-line {
+    width: 100%;
+    height: 2px;
+    border: solid 1px #979797;
+}
+
+aside, .tablet {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    aside, .upper-line, .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: flex;
+    }
+
+    .transfers-tablet {
+        display: flex;
+        flex-direction: column;
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+
+    .strap {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 728px;
+        p {
+            @include font-properties;
+            font-size: 10px;
+            line-height: 1.5;
+            letter-spacing: 0.12px;
+            color: $darker-gray;
+            text-transform: uppercase;
+        }
+        .category {
+            margin-left: 100px;
+        }
+        .how-much {
+            margin-left: 180px;
+        }
+    }
+
+    .when {
+        font-size: 14px;
+        font-weight: 800;
+        color: $second-brand-color;
+        line-height: 1.07;
+        letter-spacing: 0.17px;
+        margin-left: 33px;
+    }
+
+    .little-arrow {
+        margin-left: 36px;
+    }
+
+    .category {
+        display: flex;
+        @include font-properties;
+        font-size: 10px;
+        line-height: 1.5;
+        letter-spacing: 0.12px;
+        color: #3cae64;
+        text-transform: uppercase;
+        margin-left: 146px;
+    }
+
+    .uber {
+        margin-left: 220px;
+    }
+
+    .how-much.uber {
+        margin-left: 138px;
+    }
+
+    .how-much {
+        margin-left: 133px;
+    }
+
+    .why {
+        margin-left: 150px;
+    }
+
+    .transfers-up {
+        margin-top: 0px;
+        p, img {
+            margin-top: 10px;
+        }
+    }
+
+    .who {
+        margin-left: 36px;
+        margin-top: 0;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    article {
+        width: 728px;
+        height: 500px;
+        border: solid 1px #dbdbdb;
+        background-color: $white-color;
+        margin-top: 40px;
+        padding-top: 10px;
+    }
+
+    section {
+        width: 728px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 0;
+        div {
+            margin-left: 20px;
+            width: 210px;
+            height: 50px;
+        }
+    }
+
+    .line {
+        width: 727px;
+        height: 2px;
+    }
+
+    .account {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .account-name {
+        font-size: 26px;;
+    }
+
+    .available-founds {
+        margin: 0;
+        text-align: right;
+    }
+
+    .amount {
+        font-size: 26px;
+        margin-top: 5px;
+    }
+
+    .my-founds {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .show {
+        margin-left: 32px;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width: 1352px) {
+
+    main {
+        display: grid;
+        grid-template-rows: minmax(500px, auto);
+        grid-template-columns: 800px 380;
+        grid-column-gap: 40px;
+        grid-row-gap: 39px;
+        padding: 39px 66px 40px;
+    }
+
+    article {
+        grid-column: 1/2;
+        align-self: start;
+        width: 800px;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .category {
+        margin-left: 220px;
+    }
+
+    .strap .category {
+        margin-left: 175px;
+    }
+
+    .uber {
+        margin-left: 293px;
+    }
+
+    .strap .how-much {
+        margin-left: 178px;
+    }
+
+    // .how-much.uber {
+    //     margin-left: 138px;
+    // }
+
+    section, .strap, .line {
+        width: 800px;
+    }
+
+    aside {
+        grid-column: 2/2;
+        width: 380px;
+        display: block;
+    }
+
+    aside div {
+        padding: 10px;
+        width: 380px;
+    }
+
+    .call {
+        width: 380px;
+        height: 180px;
+        background-color: #4c92e0;
+        margin-bottom: 41px;
+        p {
+            margin: 12px;
+        }
+    }
+
+    .call-text1 {
+        @include font-properties;
+        width: 184px;
+        height: 27px;
+        font-size: 22px;
+        font-weight: 800;
+        line-height: normal;
+        color: $white-color;
+    }
+
+    .call-text2 {
+        @include font-properties;
+        width: 288px;
+        height: 51px;
+        font-size: 14px;
+        line-height: normal;
+        color: $white-color;
+        text-align: left;
+    }
+
+    .call-text3 {
+        @include font-properties;
+        width: 114px;
+        height: 17px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: normal;
+        color: $white-color;
+        text-transform: uppercase;
+    }
+
+    .analysis {
+        width: 380px;
+        height: 385px;
+        border: solid 1px #dbdbdb;
+        background-color: $white-color;
+        display: flex;
+        padding: 14px;
+        padding-left: 20px;
+    }
+
+    .analysis-text {
+        @include font-properties;
+        width: 134px;
+        height: 19px;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.19px;
+        color: #000000;
+        margin: 14px;
+    }
+
+}

@@ -1,0 +1,51 @@
+$brand-color: #d71920;
+$second-brand-color: #2f3234;
+$light-gray: #f4f4f4;
+$darker-gray: #858585;
+$white-color: #ffffff;
+
+@mixin font-properties {
+    font-family: Lato;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+@mixin absolute-contain {
+    position: absolute;
+    object-fit: contain;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: $light-gray;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 56px minmax(638px, auto) 330px;
+    grid-template-columns: 1fr;
+}
+
+p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        grid-template-rows: 112px minmax(638px, auto) 140px;
+    }
+
+}
+
+@import '_header';
+@import '_main';
+@import '_footer';
