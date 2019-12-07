@@ -23,6 +23,8 @@ class InputElement {
             console.log(this.value);
         })
     }
+
+    // ta metoda nie jest nigdzie wywoływana 
     pushToSubmitArray(arryToPush){
         arrayToPush.push(this);
     }

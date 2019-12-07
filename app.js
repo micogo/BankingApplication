@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const transferFormSubmit = document.querySelector('.transfer-oval');
     transferFormSubmit.addEventListener("click", function(e) {
         e.preventDefault();
+        // nie przekazujesz transferObject
         console.log("Submit");
 
 	 })
